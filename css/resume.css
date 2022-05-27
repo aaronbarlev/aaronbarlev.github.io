@@ -145,3 +145,11 @@ a {
 a:hover, a:focus, a:active {
   color: #088c3f;
 }
+
+.btn-info {
+  background-color: #131554;
+}
+
+.btn-info:hover {
+  background-color: #088c3f;
+}
