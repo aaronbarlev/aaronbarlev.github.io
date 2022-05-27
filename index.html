@@ -2,7 +2,6 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -21,18 +20,14 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom styles -->
-    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
+    <link href="css/aaron.css" rel="stylesheet">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-
+    <link rel="shortcut icon" href="img/favicon1.ico" type="image/x-icon">
   </head>
 
   <body id="page-top">
-
-    <!-- devicons: in your body
-    <i class="devicon-amazonwebservices-original"></i>-->
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Aaron Barlev</span>
@@ -49,7 +44,10 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#career">Career</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#education">Education &amp; Skills</a>
@@ -62,7 +60,6 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
           </li>
-
         </ul>
       </div>
     </nav>
@@ -99,15 +96,6 @@
             </li>
 
             <li class="list-inline-item">
-              <a href="https://play.google.com/store/apps/developer?id=Aaron+Barlev">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i title="Google Play Listings" class="fa fa-android fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-
-            <li class="list-inline-item">
               <a href="mailto:aaron@aaronbarlev.com">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -119,59 +107,128 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Self-Driving Pacerbot</h3>
-              <p style="width:75%">Created an autonomous vision-guided robot for pacing track athletes. Utilized a Raspberry Pi computer for image processing with Python and OpenCV. Employed Atmel microcontrollers for low-level control with C++ and Arduino. Fabricated necessary structures using Computer Aided Design with Autodesk Inventor.</p>
-              <div class="subheading mb-3"><a href="pdf/aaronbarlev_pacerbot.pdf">Pacerbot Final Report</a></div>
-              <div >
-              <video style="width:50%" alt="Pacerbot" controls autoplay muted loop>
-              <source src="img/aaronbarlev_pacerbot.mp4" type="video/mp4">
+              <h3 class="mb-0"><a href="https://kivu-alpha.herokuapp.com/ ">Kivu</a></h3>
+              <p style="width:75%">Created a web application to allow hikers in U.S. National Parks to connect with other hikers and gather up-to-date park information. Wrote frontend in HTML, CSS, and JavaScript and backend in Python. Built out website hosting using Heroku. Designed a database using MySQL and AWS RDS. Developed a salting and hashing algorithm to encrypt user passwords. Implemented SQL injection protection logic. Built out automated group chat creation using the GroupMe API. Added user verification using text messaging and reCAPTCHA. Integrated payment processing with PayPal.</p>
+              <video style="width:50%" alt="Kivu" controls autoplay muted loop>
+                <source src="vid/aaronbarlev_kivu.mp4" type="video/mp4">
               </video>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href="https://barlevedu.com/ ">BarlevEDU</a></h3>
+              <p style="width:75%">Established successful computer science tutoring business. Worked with over 70 unique clients in first 6 months of operation. Designed and executed lesson plans for up to 12 months of instruction for students ranging from middle school to retirement age in various programming languages including Python, Ruby, and C++. Guided students in the completion of a wide range of interesting projects using countless languages, tools, and frameworks.</p>
+              <div class="container">
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#past-projects">Past student project examples</button>
+                <div id="past-projects" class="collapse">
+                  <br>
+                  <ul class="fa-ul mb-0">
+                    <li style="width:50%">
+                      <i class="fa-li fa fa-flag"></i>
+                      <i>Duck hunting game using MATLAB and Arduino with a focus on button feedback and nested while loops</i>
+                    </li>
+                    <li style="width:50%">
+                      <i class="fa-li fa fa-flag"></i>
+                      <i>COVID-19 case tracking software using Java with a focus on binary nodes, trees, and decisions trees</i>
+                    </li>
+                    <li style="width:50%">
+                      <i class="fa-li fa fa-flag"></i>
+                      <i>Bank account and credit card software using Java with a focus on classes, instance variables, constructors, and loops</i>
+                    </li>
+                    <li style="width:50%">
+                      <i class="fa-li fa fa-flag"></i>
+                      <i>Film captioning software that detected mistakes by annotators using Python with a focus on JSON file parsing and processing, dictionary data structures, and nested lists</i>
+                    </li>
+                    <li style="width:50%">
+                      <i class="fa-li fa fa-flag"></i>
+                      <i>Minimum spanning tree calculation software using C++ with a focus on Prim's Algorithm and data structures</i>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Computer Vision-Based LIDAR Sensor</h3>
-              <p style="width:75%">Designed and constructed a computer vision-powered LIDAR sensor and used it to create a 3-D point cloud of a structure on the University of Maryland campus. Utilized Python computer vision libraries to write software which uses a still image to compute the distance of an object relative to the camera. Processed the distance data using MATLAB to create a point cloud of the object.</p>
-              <div class="subheading mb-3"><a href="pdf/aaronbarlev_lidar.pdf">LIDAR Sensor Presentation</a></div>
-              <div>
-              <video style="width:50%" alt="3-D Point Cloud" controls autoplay muted loop>
-              <source src="img/aaronbarlev_lidar.mp4" type="video/mp4">
+              <h3 class="mb-0"><a href="pdf/aaronbarlev_pacerbot.pdf">Self-Driving Pacerbot</a></h3>
+              <p style="width:75%">Created an autonomous vision-guided robot for pacing track athletes. Utilized a Raspberry Pi computer for image processing with Python and OpenCV. Employed Atmel microcontrollers for low-level control with C++ and Arduino. Fabricated necessary structures using Computer Aided Design with Autodesk Inventor.</p>
+              <video style="width:50%" alt="Pacerbot" controls autoplay muted loop>
+              <source src="vid/aaronbarlev_pacerbot.mp4" type="video/mp4">
               </video>
-              </div>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href="pdf/aaronbarlev_lidar.pdf">Computer Vision-Based LIDAR Sensor</a></h3>
+              <p style="width:75%">Designed and constructed a computer vision-powered LIDAR sensor and used it to create a 3-D point cloud of a structure on the University of Maryland campus. Utilized Python computer vision libraries to write software which uses a still image to compute the distance of an object relative to the camera. Processed the distance data using MATLAB to create a point cloud of the object.</p>
+              <video style="height:240px" alt="3-D Point Cloud" controls autoplay muted loop>
+              <source src="vid/aaronbarlev_lidar.mp4" type="video/mp4">
+              </video>
             </div>
           </div>
 		  
-		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+		      <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Hyperlinked Network Link-Prediction</h3>
-              <p style="width:75%">Conducted independent, novel research on hyperlink-prediction in the context of a search engine. Evaluated the feasibility and usefulness of a method to predict the likelihood of the creation of hyperlinks between existing web pages. Examined the application of ranking search engine results by quality for a given search query.</p>
-              <img style="width:50%" src="img/paper1.png" alt="Abstract">
-			  <div class="subheading mb-3"><a href="pdf/aaronbarlev_hyperlink.pdf">The Paper</a></div>
-              <div class="subheading mb-3"><a href="https://github.com/aaronbarlev/hyperlink-graph/blob/master/HyperlinkGraph.java">Hyperlink Graph Generation Java File</a></div>
+              <h3 class="mb-0"><a href="pdf/aaronbarlev_hyperlink.pdf">Hyperlinked Network Link-Prediction</a></h3>
+              <p style="width:75%">Conducted independent, novel research on hyperlink-prediction in the context of a search engine. Evaluated the feasibility and usefulness of a method to predict the likelihood of the creation of hyperlinks between existing web pages. <a href="https://github.com/aaronbarlev/hyperlink-graph/blob/master/HyperlinkGraph.java">Examined the application of ranking search engine results by quality for a given search query</a>.</p>
+			        <img style="width:50%" src="img/aaronbarlev_hyperlink.png" alt="Hyperlink">
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Android Application Development</h3>
+              <h3 class="mb-0"><a href="https://play.google.com/store/">Android Application Development</a></h3>
               <p style="width:75%">Independently developed and published multiple mental math training applications for Android. The final iteration consisted of a timed level system, with unlockable achievements to motivate progress. Applied numerous Java concepts within the projects, including: storage of key-value pairs for later recall of user data, usage of lambda expressions, implementation of a Runnable interface for use within a thread, usage of a model-view-controller paradigm, and event-driven programming. </p>
-              <div class="subheading mb-3"><a href="https://play.google.com/store/apps/details?id=com.aaronbarlev.fifteen">Google Play Store Listing</a></div>
-              <div >
               <video style="width:30%" alt="Fifteen" controls autoplay muted loop>
-              <source src="img/aaronbarlev_fifteen.mp4" type="video/mp4">
+              <source src="vid/aaronbarlev_fifteen.mp4" type="video/mp4">
               </video>
               </div>
             </div>
           </div>
+      </section>
 
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="career">
+        <div class="my-auto">
+          <h2 class="mb-5">Career</h2>
+          <div class="row">
+            <div class="column">
+              <img style="width:75%" src="img/apple_logo.png" alt="Apple">
+            </div>
+            <div class="column">
+              <h3 class="mb-0"><a href="https://www.apple.com/">Apple</a></h3>
+              <p style="width:95%">At Apple, I worked on the <a href="https://support.apple.com/guide/watch/welcome/watchos">Apple Watch</a>. I was responsible for the software that powers many of the health features used by millions of people around the world every day. Specifically, I was the owner of the wrist detection and digital crown software. Additionally, I shared responsibility with my team for a wide range of other health features, including the ECG, blood oxygen, and heart rate sensing capabilities. Outside of my time working on the Apple Watch, I volunteered as a Project Manager for the Apple Jewish Association.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img style="width:75%" src="img/av_logo.png" alt="AV">
+            </div>
+            <div class="column">
+              <h3 class="mb-0"><a href="https://www.avinc.com/">AeroVironment</a></h3>
+              <p style="width:95%">In 2019, AeroVironment established the <a href="https://www.avinc.com/resources/press-releases/view/aerovironment-announces-launch-of-new-england-innovation-center-the-company">Innovation Center of New England</a> just outside of Boston, MA. This was the company's first engineering facility outside of California. I had interned for AV in 2017 and was intrigued by the cutting-edge work being planned for the east coast office. I joined as one of the first 10 engineers. We were a team brought together to create the next generation of small surveillance VTOL aircraft for the world's militaries. Soon after joining, I was spearheading the development of the driver software for the vehicle's sensor suite. In the following years at the company, I led the design and implementation of the obstacle avoidance hardware and software and developed the EO camera software pipeline.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img style="width:75%" src="img/iai_logo.png" alt="IAI">
+            </div>
+            <div class="column">
+              <h3 class="mb-0"><a href="https://www.i-a-i.com/">Intelligent Automation</a></h3>
+              <p style="width:95%">I joined Intelligent Automation as a member of a team that pursued R&D grants from the DoD in the form of <a href="https://www.sbir.gov/">SBIR (Small Business Innovation Research)</a> programs. I was most involved in an effort to apply swarm robotics technology on the battlefield where I designed and wrote control software for a UAV-based autonomous swarm formation. As a proof of concept, I successfully demonstrated this software using a handful of six-wheeled ground-based robots. The vehicles were powered by the Linux-based NVIDIA Jetson TX2 and an ultra-wideband indoor positioning system.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
@@ -185,7 +242,7 @@
               <div><b>Major:</b> Mechanical Engineering</div>
               <div><b>Minor:</b> Computer Science</div>
               <div><b>GPA:</b> 3.7/4.0</div>
-			  <div>August 2015 - August 2019</div>
+			        <div>August 2015 - August 2019</div>
             </div>
           </div>
 
@@ -285,7 +342,7 @@
 
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              <b>All-Big Ten Academic Honors</b> - <i><a href="http://www.umterps.com/ViewArticle.dbml?DB_OEM_ID=29700&ATCLID=211605006">Spring 2017</a>, <a href="http://www.umterps.com/ViewArticle.dbml?DB_OEM_ID=29700&ATCLID=211717310">Spring 2018</a>, <a href="https://umterps.com/news/2019/5/29/the-barry-mary-gossett-center-for-academic-personal-excellence-spring-all-academic.aspx">Spring 2019</a></i></li>
+              <b>All-Big Ten Academic Honors</b> - <i>Spring 2017 Spring 2018 Spring 2019</i></li> <!--http://www.umterps.com/ViewArticle.dbml?DB_OEM_ID=29700&ATCLID=211605006 http://www.umterps.com/ViewArticle.dbml?DB_OEM_ID=29700&ATCLID=211717310 https://umterps.com/news/2019/5/29/the-barry-mary-gossett-center-for-academic-personal-excellence-spring-all-academic.aspx-->
 
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
@@ -293,11 +350,11 @@
 
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              <b>President's Cup Award, University of Maryland Department of Intercollegiate Athletics</b> - <i><a href="https://umterps.com/news/2018/5/10/211715368.aspx?path=track">Spring 2018</a>, Spring 2019</i></li>
+              <b>President's Cup Award, <a href="https://umterps.com/">University of Maryland Department of Intercollegiate Athletics</a></b> - <i>Spring 2018, Spring 2019</i></li> <!--https://umterps.com/news/2018/5/10/211715368.aspx?path=track-->
 
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              <b>Student Spotlight, Engineering at Maryland Magazine</b> - <i><a href="https://eng.umd.edu/sites/clark.umd.edu/files/spring-2018_engineering-at-maryland.pdf#page=12">Spring 2018</a></i></li>
+              <b>Student Spotlight, <a href="pdf/spring-2018_engineering-at-maryland.pdf">Engineering at Maryland Magazine</a></b> - <i>Spring 2018</i></li>
 
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
@@ -305,11 +362,11 @@
 
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              <b>Student-Athlete Advisory Committee</b> - <i><a href="https://umterps.com/sports/2018/6/19/saac.aspx">appointed August 2017</a></i></li>
+              <b>Student-Athlete Advisory Committee</b> - <i>appointed August 2017</i></li> <!--https://umterps.com/sports/2018/6/19/saac.aspx-->
 
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              <b>Big Ten Distinguised Scholar</b> - <i><a href="http://www.umterps.com/ViewArticle.dbml?DB_OEM_ID=29700&ATCLID=211643000">Summer 2017</a></i></li>
+              <b>Big Ten Distinguised Scholar</b> - <i>Summer 2017</i></li> <!--http://www.umterps.com/ViewArticle.dbml?DB_OEM_ID=29700&ATCLID=211643000-->
 
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
@@ -317,7 +374,7 @@
 
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              <b>NJSIAA Scholar Athlete Award</b> - <i><a href="http://www.njsiaa.org/sites/default/files/document/SCHOLAR%20ATHLETE%20RECIPIENTS%202015%20for%20website%20posting.pdf">Spring 2015</a></i></li>
+              <b>NJSIAA Scholar Athlete Award</b> - <i>Spring 2015</i></li> <!--http://www.njsiaa.org/sites/default/files/document/SCHOLAR%20ATHLETE%20RECIPIENTS%202015%20for%20website%20posting.pdf-->
 
           </ul>
         </div>
@@ -326,11 +383,11 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Interests</h2>
-          <p style="width:75%">Apart from my technical interests - my passions include traveling, fitness, following the stock market, and cooking. I've been to over half the U.S. states and I travel abroad at every opportunity. During my time at the University of Maryland, I was a <a href="https://www.tfrrs.org/athletes/5614853/Maryland/Aaron_Barlev.html">distance runner</a> on the <a href="https://umterps.com/roster.aspx?rp_id=6530">Track &amp; Field team</a>, where I <a href="https://www.iaaf.org/athletes/united-states/aaron-barlev-358981">competed</a> in the 1500 and 3000 <a href="https://en.wikipedia.org/wiki/Steeplechase_(athletics)">Steeplechase</a>. I began investing at the age of 14. My favorite dish is King Salmon with steamed broccoli and potatoes.</p>
+          <p style="width:75%">Apart from my technical interests - my passions include traveling, fitness, following the stock market, and cooking. I've been to over half the U.S. states and I travel abroad at every opportunity. I began investing at the age of 14. My favorite dish is King Salmon with steamed broccoli and potatoes. During my time at the University of Maryland, I was a <a href="https://www.tfrrs.org/athletes/5614853/Maryland/Aaron_Barlev.html">distance runner</a> on the <a href="https://umterps.com/roster.aspx?rp_id=6530">Track &amp; Field team</a>, where I <a href="https://www.iaaf.org/athletes/united-states/aaron-barlev-358981">competed</a> in the 1500 and 3000 <a href="https://en.wikipedia.org/wiki/Steeplechase_(athletics)">Steeplechase</a>. Since retiring from Track & Field, I've started training in <a href="https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu">Brazilian Jiu-Jitsu</a>. My preferred submissions are the Americana and Triangle Choke.</p>
 
-          <div >
+          <div>
             <video style="width:50%" alt="Music City Challenge" controls autoplay muted loop>
-            <source src="img/aaronbarlev_mile.mp4" type="video/mp4">
+            <source src="vid/aaronbarlev_mile.mp4" type="video/mp4">
             </video>
           </div>
           <p><i>
@@ -340,15 +397,24 @@
 
           </i></p>
 
+          <div>
+            <video style="width:50%" alt="Jiu Jitsu World League Golden State IV" controls autoplay muted loop>
+            <source src="vid/aaronbarlev_bjj.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p><i>
+            Jiu Jitsu World League Golden State IV - April 30th, 2022
+            <br>
+            This was my first BJJ competition.
+
+          </i></p>
         </div>
-
       </section>
-
     </div>
 
     <div class="copyright py-4 text-right text-black">
       <div class="container">
-        <small>Copyright &copy; Aaron Barlev 2020</small>
+        <small>Copyright &copy; Aaron Barlev 2022</small>
       </div>
     </div>
 
@@ -360,7 +426,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts -->
-    <script src="js/resume.min.js"></script>
+    <script src="js/resume.js"></script>
 
   </body>
 
